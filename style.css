@@ -1,0 +1,55 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.tierra {
+    background-image: url(tierra.jpg);
+    background-repeat: no-repeat;
+    background-size: 112%;
+    animation: movimiento 28s infinite ease-out alternate;
+}
+
+@keyframes movimiento {
+    0% {
+        background-position: bottom right;
+    }
+    30% {
+        background-position: top left;
+    }
+    60% {
+        background-position: top right;
+    }
+    100% {
+        background-position: bottom left;
+    }
+}
+
+.textFinal::before {
+    content: "Bien, llevas un aproximado de ";
+}
+.textFinal::after {
+    content: " dias con vida en este mundo,";
+}
+
+.textFinal2::before {
+    content: " un total de ";
+}
+.textFinal2::after {
+    content: " meses aproximadamente viviendo";
+}
+
+.textFinal3::before {
+    content: " Y tenes o estas por cumplir ";
+}
+.textFinal3::after {
+    content: " años de edad.";
+}
